@@ -87,4 +87,42 @@ returnwith = playersv2.with(1, "Mbappé");
 console.log("#18 " + playersv2)
 console.log("#18 " + returnwith);
 
-//#19 hola hola
+//#19 Utgå från arrayen nedan. Skriv en for-loop som skriver ut varje tal i arrayen.
+const numbers = [5, 8, 12, 20, 3];
+for (i=0; i<numbers.length; i++) {
+console.log("#19 plats "+ i + " arrayen " + numbers)
+}
+
+//#20 Använd en for-loop för att summera alla tal i arrayen numbers ovan. Logga ut summan efter att loopen har körts klart.
+let sumofnumbers = 0;
+for (const number of numbers){
+     sumofnumbers = sumofnumbers+number
+    console.log("#20 " + sumofnumbers)
+};
+
+//#21 Skriv en for-loop som letar efter det största talet i numbers. Logga det största värdet.
+let biggestnum = 0;
+for (const number of numbers) {
+    if (number>biggestnum) {
+        biggestnum=number
+    }
+}
+console.log("#21 " + biggestnum);
+
+//#22 Skapa en ny array som heter doubledNumbers. Använd en for-loop för att fylla doubledNumbers med varje tal i numbers multiplicerat med 2.
+const doubledNumbers = []
+for (i=0; i<numbers.length; i++){
+doubledNumbers[i] = (numbers[i]*2);
+} 
+console.log("#22 " + doubledNumbers)
+
+//#23 Använd en for-loop för att räkna ut medelvärdet av talen i numbers. Logga ut medelvärdet.
+
+
+//#24 Skriv en for-loop som hittar och loggar ut det minsta talet i numbers.
+let smallestnum = Infinity;
+for (const number of numbers) 
+    if (smallestnum>number) {
+        smallestnum=number
+    }; 
+console.log("#24 " + smallestnum);
