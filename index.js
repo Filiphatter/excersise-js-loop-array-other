@@ -126,3 +126,139 @@ for (const number of numbers)
         smallestnum=number
     }; 
 console.log("#24 " + smallestnum);
+
+//#25 Skapa en ny array som heter positiveNumbers och fyll den med endast de positiva talen från arrayen nedan. Använd en for-loop och en if-sats.
+const mixedNumbers = [3, -5, 12, -1, 8, -6];
+const positiveNumbers = []
+
+
+for (const mixed of mixedNumbers) {
+     if (mixed > 0){
+     positiveNumbers.push(mixed)}
+
+}
+console.log("#25 " + positiveNumbers)
+
+//#26 Utgå från arrayen mixedNumbers nedan. Skriv en for-loop utan att använda index, där du loggar varje positivt tal.
+
+
+const mixedNumbers1 = [3, -5, 12, -1, 8, -6];
+const positiveNumbers1 = []
+
+
+for (const mixed1 of mixedNumbers1) {
+     if (mixed1 > 0){
+     console.log("#26 " + mixed1)
+}
+}
+
+//#27 Använd en while-loop för att logga alla tal i arrayen numbers från och med index 0. Avbryt loopen om talet är större än 10.
+// const numbers = [5, 8, 12, 20, 3];
+const tio = []
+
+let j = 0; //index
+
+while (j < numbers.length) {
+    if (numbers[j] > 10) {
+        break;
+    }
+    else {
+        tio.push(numbers[j])
+}
+j++
+}
+console.log("#27 " + tio);
+
+//#28 Utgå från arrayen mixedNumbers ovan. Använd en while-loop för att räkna hur många negativa tal det finns i arrayen. Logga antalet.
+const mixedNumbers2 = [3, -5, 12, -1, 8, -6];
+let negativa = 0;
+let k = 0;
+
+while (k < mixedNumbers2.length) {
+    if (mixedNumbers2[k] < 0) {
+        negativa++;
+    }
+        k++
+
+}
+console.log("#28 " + negativa);
+
+//#29 Skapa en array words med några ord i den, (exempel nedan). Använd en for-loop för att logga varje ord tillsammans med dess längd (antal bokstäver).
+const words = ["banana", "apple", "kiwi", "strawberry", "peach"];
+
+for (const word of words) {
+    const bokstäver = word.length
+    console.log("#29 " + bokstäver);
+}
+
+//#30 Använd words-arrayen ovan och en for-loop för att bygga en ny sträng som består av de första bokstäverna i varje ord. Logga ut den nya strängen.
+
+let string = "";
+
+for (const word of words) {
+    string += word[0];
+}
+console.log("#30 " + string)
+
+//#31 Skriv en while-loop som itererar genom arrayen numbers och loggar varje tal tills summan av de loggade talen överstiger 25.
+index = 0;
+let sum = 0;
+
+while (25 > sum) {
+    const number = numbers[index];
+    sum += number;
+    index++
+}
+console.log("#31 " + sum)
+
+//#32 Använd en for-loop utan index för att summera alla värden i arrayen mixedNumbers. Logga ut summan.
+let sum2 = 0;
+
+for (const mixed3 of mixedNumbers) {
+    sum2 += mixed3
+   
+} 
+console.log("#32 " + sum2)
+
+//#33 Skapa en array temperatures (exempel nedan) med några temperaturer i Celsius. Använd en for-loop för att hitta den högsta temperaturen. Därefter, logga både högsta temperaturen och dess index i arrayen.
+
+const temperatures = [15, 22, 19, 30, 28, 18, 25];
+
+let highesttemp = 0;
+let jindex = 0;
+
+for (let i = 0; i < temperatures.length; i++) {
+    if (temperatures[i] > highesttemp) {
+        highesttemp = temperatures[i];
+        jindex = i;
+    }
+}
+console.log("#33 Högsta tempraturen är " + highesttemp + " graden är på index " + jindex)
+
+
+//#34 Använd en for-loop för att räkna antalet ord i words-arrayen som innehåller fler än fem bokstäver.
+
+let count = 0;
+
+for (const word of words) {
+    if (word.length > 5) {
+        count++
+    }
+}
+
+console.log("#34 antal ord som är längre än 5; " + count)
+
+//#35 Skriv en while-loop som räknar upp talen från numbers-arrayen ovan tills ett udda tal hittas. Avbryt loopen vid första udda talet och logga resultatet.
+// const numbers = [5, 8, 12, 20, 3]; 
+
+let kindex = 0;
+
+while (kindex < numbers.length) {
+    if (numbers[kindex] % 2 !== 0){
+        break;
+    }
+    console.log("#35 " + numbers[kindex]);
+    kindex++
+}
+
+// dålig uppgift var svin svår
